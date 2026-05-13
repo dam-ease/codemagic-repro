@@ -1,0 +1,103 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "ignorePaths": [
+    "codemagic.yaml"
+  ],
+  "separateMajorMinor": false,
+  "packageRules": [
+    {
+      "groupName": "Exoplayer dependency",
+      "groupSlug": "exoplayer",
+      "enabled": false,
+      "matchPackageNames": [
+        "/com.google.android.exoplayer/"
+      ]
+    },
+    {
+      "groupName": "Plugins updated through classpath declaration",
+      "groupSlug": "classpath",
+      "enabled": false,
+      "matchPackageNames": [
+        "/String:LOKALISE_PROJECT_ID/",
+        "/String:LOKALISE_SDK_TOKEN/",
+        "/kotlin:kotlin.gradle.plugin/",
+        "/kotlin-parcelize:kotlin-parcelize.gradle.plugin/",
+        "/com.huawei.agconnect:com.huawei.agconnect.gradle.plugin/",
+        "/de.mobilej.unmock:de.mobilej.unmock.gradle.plugin/",
+        "/shot:shot.gradle.plugin/",
+        "/eu.ccc.mobile:version-generator/",
+        "/eu.ccc.mobile:utils/",
+        "/eu.ccc.mobile:config/"
+      ]
+    },
+    {
+      "groupName": "AndroidX dependencies",
+      "groupSlug": "androidx",
+      "matchPackageNames": [
+        "/androidx/"
+      ]
+    },
+    {
+      "groupName": "Moshi dependencies",
+      "groupSlug": "moshi",
+      "matchPackageNames": [
+        "/com.squareup.moshi/"
+      ]
+    },
+    {
+      "groupName": "MoshiX dependencies",
+      "groupSlug": "moshix",
+      "matchPackageNames": [
+        "/dev.zacsweers.moshix/"
+      ]
+    },
+    {
+      "groupName": "Huawei dependencies",
+      "groupSlug": "huawei",
+      "matchPackageNames": [
+        "/com.huawei/"
+      ]
+    },
+    {
+      "groupName": "Android Gradle Plugin",
+      "groupSlug": "agp",
+      "matchPackageNames": [
+        "/com.android.tools.build/",
+        "/com.android.library/",
+        "/com.android.application/",
+        "/com.android.settings/",
+        "/com.android.test/",
+        "/com.android.kotlin.multiplatform.library/"
+      ]
+    },
+    {
+      "groupName": "Kotlin and KSP",
+      "groupSlug": "kotlin",
+      "matchPackageNames": [
+        "/org.jetbrains.kotlin/",
+        "/com.google.devtools.ksp/"
+      ]
+    },
+    {
+      "groupName": "Accompanist",
+      "groupSlug": "accompanist",
+      "matchPackageNames": [
+        "/com.google.accompanist/"
+      ]
+    },
+    {
+      "groupName": "Paparazzi",
+      "groupSlug": "paparazzi",
+      "matchPackageNames": [
+        "/app.cash.paparazzi:paparazzi/",
+        "/app.cash.paparazzi/"
+      ]
+    }
+  ],
+  "schedule": [
+    "before 3am on the first day of the month"
+  ]
+}

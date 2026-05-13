@@ -1,0 +1,304 @@
+[versions]
+androidPlugin = "9.2.1"
+androidXCamera = "1.6.1"
+androidXFragment = "1.8.9"
+androidXLifecycle = "2.10.0"
+androidXDataStore = "1.2.1"
+detekt = "1.23.8" # Check changelog for new/changed rules when updating detekt.
+fladle = "0.21.0"
+coil = "3.4.0"
+hilt = "2.59.2"
+huaweiServicesCore = "1.9.5.302"
+junit5 = "6.0.3"
+kermit = "2.1.0"
+kohii = "1.4.0.2017001" # ExoPlayer version should be coherent with Kohii version.
+konfetti = "2.0.4" # Version 2.0.5 is broken - https://github.com/DanielMartinus/Konfetti/issues/337
+kotlin = "2.3.21"
+kotlinCoroutines = "1.10.2"
+ktor = "3.4.3"
+laboratory = "2.0.3"
+leakCanary = "2.14" # Regression test required in QA Build
+material-navigation = "1.11.1"
+moshi = "1.15.2"
+moshix = "0.35.0"
+navigation = "2.9.8"
+okHttp = "5.3.2"
+paparazzi = "2.0.0-alpha04"
+payu = "1.0.40"
+retrofit = "3.0.0"
+
+[libraries]
+gradlePlugins-android = { group = "com.android.tools.build", name = "gradle", version.ref = "androidPlugin" }
+gradlePlugins-detekt = { group = "io.gitlab.arturbosch.detekt", name = "detekt-gradle-plugin", version.ref = "detekt" }
+gradlePlugins-detektFormatting = { group = "io.gitlab.arturbosch.detekt", name = "detekt-formatting", version.ref = "detekt" }
+gradlePlugins-fladle = { group = "com.osacky.flank.gradle", name = "fladle", version.ref = "fladle" }
+gradlePlugins-moshix = { group = "dev.zacsweers.moshix", name = "moshi-gradle-plugin", version.ref = "moshix" }
+gradlePlugins-hilt = { group = "com.google.dagger", name = "hilt-android-gradle-plugin", version.ref = "hilt" }
+gradlePlugins-huaweiAGConnectPlugin = { group = "com.huawei.agconnect", name = "agcp", version = "1.9.5.302" }
+gradlePlugins-kotlin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+gradlePlugins-laboratory = { group = "io.mehow.laboratory", name = "laboratory-gradle-plugin", version.ref = "laboratory" }
+gradlePlugins-utils = { group = "eu.ccc.mobile", name = "utils", version = "1.0" }
+gradlePlugins-config = { group = "eu.ccc.mobile", name = "config", version = "1.0" }
+gradlePlugins-paparazzi = { group = "app.cash.paparazzi", name = "paparazzi", version.ref = "paparazzi" }
+
+accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version = "0.37.3" }
+
+androidX-activity = { group = "androidx.activity", name = "activity-ktx", version = "1.13.0" }
+androidX-annotation = { group = "androidx.annotation", name = "annotation", version = "1.10.0" }
+androidX-appCompat = { group = "androidx.appcompat", name = "appcompat", version = "1.7.1" }
+androidX-archCoreTesting = { group = "androidx.arch.core", name = "core-testing", version = "2.2.0" }
+androidX-cardView = { group = "androidx.cardview", name = "cardview", version = "1.0.0" }
+androidX-startup = { group = "androidx.startup", name = "startup-runtime", version = "1.2.0" }
+androidX-viewbinding = { group = "androidx.databinding", name = "viewbinding", version = "9.2.1" }
+androidX-profileinstaller = { group = "androidx.profileinstaller", name = "profileinstaller", version = "1.4.1" }
+androidX-benchmark-macro-junit4 = { group = "androidx.benchmark", name = "benchmark-macro-junit4", version = "1.5.0-alpha06" }
+
+androidX-camera-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "androidXCamera" }
+androidX-camera-cameraView = { group = "androidx.camera", name = "camera-view", version.ref = "androidXCamera" }
+androidX-camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "androidXCamera" }
+androidX-camera-mlkit-vision = { group = "androidx.camera", name = "camera-mlkit-vision", version = "1.6.1" }
+androidX-camera-core = { group = "androidx.camera", name = "camera-core", version = "1.6.1" }
+mlkit-barcode-scanning = { group = "com.google.mlkit", name = "barcode-scanning", version = "17.3.0" }
+
+androidX-compose-bom = { group = "androidx.compose", name = "compose-bom", version = "2026.05.00" }
+androidX-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+androidX-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidX-compose-uiTooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidX-compose-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidX-compose-material = { group = "androidx.compose.material", name = "material" }
+androidX-compose-material-icons = { group = "androidx.compose.material", name = "material-icons-core" }
+androidX-compose-material-navigation = { group = "androidx.compose.material", name = "material-navigation", version.ref = "material-navigation" }
+androidX-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidX-compose-activity = { group = "androidx.activity", name = "activity-compose" }
+androidX-compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
+androidX-compose-testManifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidX-compose-uiTest = { group = "androidx.compose.ui", name = "ui-test" }
+androidX-compose-uiTestJunit = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidX-compose-constraintLayout = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version = "1.1.1" }
+androidX-compose-hiltNavigation = { group = "androidx.hilt", name = "hilt-navigation-compose", version = "1.3.0" }
+androidX-compose-icons = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidX-compose-animation = { group = "androidx.compose.animation", name = "animation-graphics-android" }
+
+androidX-constraintLayout = { group = "androidx.constraintlayout", name = "constraintlayout", version = "2.2.1" }
+androidX-coordinatorLayout = { group = "androidx.coordinatorlayout", name = "coordinatorlayout", version = "1.3.0" }
+androidX-customTabs = { group = "androidx.browser", name = "browser", version = "1.10.0" }
+androidX-fragment = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "androidXFragment" }
+androidX-fragment-compose = { group = "androidx.fragment", name = "fragment-compose", version.ref = "androidXFragment" }
+androidX-fragmentTesting = { group = "androidx.fragment", name = "fragment-testing", version.ref = "androidXFragment" }
+androidX-futures = { group = "androidx.concurrent", name = "concurrent-futures-ktx", version = "1.3.0" }
+androidX-gridLayout = { group = "androidx.gridlayout", name = "gridlayout", version = "1.1.0" }
+androidX-ktxCore = { group = "androidx.core", name = "core-ktx", version = "1.18.0" }
+
+androidX-lifecycle-commonJava8 = { group = "androidx.lifecycle", name = "lifecycle-common-java8", version.ref = "androidXLifecycle" }
+androidX-lifecycle-liveData = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version = "2.10.0" }
+androidX-lifecycle-process = { group = "androidx.lifecycle", name = "lifecycle-process", version.ref = "androidXLifecycle" }
+androidX-lifecycle-viewModel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version = "2.10.0" }
+androidX-lifecycle-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version = "2.10.0" }
+androidX-lifecycle-testing = { group = "androidx.lifecycle", name = "lifecycle-runtime-testing", version = "2.10.0" }
+
+androidX-paging = { group = "androidx.paging", name = "paging-runtime-ktx", version = "3.5.0" }
+androidX-preference = { group = "androidx.preference", name = "preference-ktx", version = "1.2.1" }
+androidX-recyclerView = { group = "androidx.recyclerview", name = "recyclerview", version = "1.4.0" }
+androidX-interpolator = { group = "androidx.interpolator", name = "interpolator", version = "1.0.0" }
+
+androidX-datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "androidXDataStore" }
+androidX-datastore-preferences-core = { group = "androidx.datastore", name = "datastore-preferences-core", version.ref = "androidXDataStore" }
+
+androidX-test-core = { group = "androidx.test", name = "core-ktx", version = "1.7.0" }
+androidX-test-extJunit = { group = "androidx.test.ext", name = "junit", version = "1.3.0" }
+androidX-test-espresso = { group = "androidx.test.espresso", name = "espresso-core", version = "3.7.0" }
+androidX-test-espresso-contrib = { group = "androidx.test.espresso", name = "espresso-contrib", version = "3.7.0" }
+androidX-test-uiAutomator = { module = "androidx.test.uiautomator:uiautomator", version = "2.3.0" }
+# Do not update monitor unless androidx.compose.ui:ui-test uses latest version, then remove dependency
+androidX-test-monitor = { group = "androidx.test", name = "monitor", version = "1.8.0" }
+androidX-test-orchestrator = { group = "androidx.test", name = "orchestrator", version = "1.6.1" }
+androidX-test-rules = { group = "androidx.test", name = "rules", version = "1.7.0" }
+androidX-test-runner = { group = "androidx.test", name = "runner", version = "1.7.0" }
+
+arrow-bom = { group = "io.arrow-kt", name = "arrow-stack", version = "2.2.2.1" }
+arrow-core = { group = "io.arrow-kt", name = "arrow-core" }
+arrow-coroutines = { group = "io.arrow-kt", name = "arrow-fx-coroutines" }
+
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+hilt-runtime = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+
+facebook-shimmer = { group = "com.facebook.shimmer", name = "shimmer", version = "0.5.0" }
+
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version = "34.13.0" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics" }
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics" }
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging" }
+firebase-perf = { group = "com.google.firebase", name = "firebase-perf" }
+firebase-config = { module = "com.google.firebase:firebase-config" }
+
+coil-core = { group = "io.coil-kt.coil3", name = "coil", version.ref = "coil" }
+coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
+coil-svg = { group = "io.coil-kt.coil3", name = "coil-svg", version.ref = "coil" }
+coil-test = { group = "io.coil-kt.coil3", name = "coil-test", version.ref = "coil" }
+coil-network-okhttp = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coil" }
+
+huaweiServices-core = { group = "com.huawei.agconnect", name = "agconnect-core", version.ref = "huaweiServicesCore" }
+huaweiServices-location = { group = "com.huawei.hms", name = "location", version = "6.16.0.302" } # Remove bcprov exclusion
+huaweiServices-push = { group = "com.huawei.hms", name = "push", version = "6.13.0.301" }
+huaweiServices-installReferrer = { group = "com.huawei.hms", name = "ads-installreferrer", version = "3.4.85.301" }
+
+kohii-core = { group = "im.ene.kohii", name = "kohii-core", version.ref = "kohii" }
+kohii-exoPlayer = { group = "im.ene.kohii", name = "kohii-exoplayer", version.ref = "kohii" }
+
+kotlin-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinCoroutines" }
+kotlin-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinCoroutines" }
+kotlin-coroutines-playServices = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-play-services", version.ref = "kotlinCoroutines" }
+kotlin-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinCoroutines" }
+
+kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", version.ref = "kotlin" }
+kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test" }
+kotlin-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.11.0" }
+kotlin-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version = "0.7.1-0.6.x-compat" }
+kotest-assertions = { group = "io.kotest", name = "kotest-assertions-core", version = "6.1.11" }
+kotest-extensions-arrow = { group = "io.kotest.extensions", name = "kotest-assertions-arrow", version = "2.0.0" }
+
+ktor-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-serialization = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-contentNegotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor" }
+ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
+ktor-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
+
+laboratory-core = { group = "io.mehow.laboratory", name = "laboratory", version.ref = "laboratory" }
+laboratory-sharedPreferences = { group = "io.mehow.laboratory", name = "laboratory-shared-preferences", version.ref = "laboratory" }
+laboratory-hyperionPlugin = { group = "io.mehow.laboratory", name = "laboratory-hyperion-plugin", version.ref = "laboratory" }
+
+okHttp-bom = { group = "com.squareup.okhttp3", name = "okhttp-bom", version.ref = "okHttp" }
+okHttp-client = { group = "com.squareup.okhttp3", name = "okhttp" }
+okHttp-loggingInterceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor" }
+okHttp-mockWebServer = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "okHttp" }
+okHttp-tls = { group = "com.squareup.okhttp3", name = "okhttp-tls", version.ref = "okHttp" }
+
+playServices-location = { group = "com.google.android.gms", name = "play-services-location", version = "21.3.0" }
+playServices-mapsUtils = { group = "com.google.maps.android", name = "android-maps-utils", version = "4.3.0" }
+playServices-appUpdate = { group = "com.google.android.play", name = "app-update-ktx", version = "2.1.0" }
+playServices-review = { group = "com.google.android.play", name = "review-ktx", version = "2.0.2" }
+
+retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-mock = { group = "com.squareup.retrofit2", name = "retrofit-mock", version.ref = "retrofit" }
+retrofit-scalars = { group = "com.squareup.retrofit2", name = "converter-scalars", version.ref = "retrofit" }
+retrofit-moshiConverter = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit" }
+
+moshi-core = { group = "com.squareup.moshi", name = "moshi", version.ref = "moshi" }
+moshi-adapters = { group = "com.squareup.moshi", name = "moshi-adapters", version.ref = "moshi" }
+moshi-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshi" }
+
+moshix-sealed = { group = "dev.zacsweers.moshix", name = "moshi-sealed-runtime", version.ref = "moshix" }
+moshix-sealedReflect = { group = "dev.zacsweers.moshix", name = "moshi-sealed-reflect", version.ref = "moshix" }
+moshix-adapters = { group = "dev.zacsweers.moshix", name = "moshi-adapters", version.ref = "moshix" }
+
+payu-webView = { group = "com.payu.android.front.sdk", name = "payment-library-webview-module", version.ref = "payu" }
+payu-googlePayAdapter = { group = "com.payu.android.front.sdk", name = "payment-library-google-pay-adapter", version.ref = "payu" }
+payu-googlePayModule = { group = "com.payu.android.front.sdk", name = "payment-library-google-pay-module", version.ref = "payu" }
+
+zxing-core = { group = "com.google.zxing", name = "core", version = "3.5.4" }
+
+autoService = { group = "dev.zacsweers.autoservice", name = "auto-service-ksp", version = "1.2.0" }
+appsFlyer = { group = "com.appsflyer", name = "af-android-sdk", version = "6.18.0" }
+adapterDelegates = { group = "com.hannesdorfmann", name = "adapterdelegates4-kotlin-dsl-viewbinding", version = "4.3.2" }
+assertJ = { group = "org.assertj", name = "assertj-core", version = "3.27.7" }
+byteunits = { group = "com.jakewharton.byteunits", name = "byteunits", version = "0.9.1" }
+clarity = { group = "com.microsoft.clarity", name = "clarity-compose", version = "3.8.2" }
+deviceNames = { group = "com.jaredrummler", name = "android-device-names", version = "2.1.1" }
+# ExoPlayer version should be coherent with Kohii version.
+exoPlayer = { group = "com.google.android.exoplayer", name = "exoplayer", version = "2.17.1" }
+foqa = { group = "pl.droidsonroids.foqa", name = "foqa", version = "0.2.26" }
+installReferrer = { group = "com.android.installreferrer", name = "installreferrer", version = "2.2" }
+javaXInject = { group = "javax.inject", name = "javax.inject", version = "1" }
+
+junit5-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junit5" }
+junit5-vintage = { group = "org.junit.vintage", name = "junit-vintage-engine", version.ref = "junit5" }
+junit5-runtime = { group = "org.junit.platform", name = "junit-platform-launcher" }
+
+mockk = { group = "io.mockk", name = "mockk", version = "1.14.9" }
+
+hamcrest = { group = "org.hamcrest", name = "hamcrest", version = "2.2" } # Same version as espresso.core
+openStreetMaps = { group = "org.osmdroid", name = "osmdroid-android", version = "6.1.20" }
+openStreetMapsBonusPack = { group = "com.github.MKergall", name = "osmbonuspack", version = "6.9.0" }
+konfetti = { group = "nl.dionsegijn", name = "konfetti-xml", version.ref = "konfetti" }
+konfetti-compose = { group = "nl.dionsegijn", name = "konfetti-compose", version.ref = "konfetti" }
+kotlinPoet = { group = "com.squareup", name = "kotlinpoet", version = "2.3.0" }
+leakCanary = { group = "com.squareup.leakcanary", name = "leakcanary-android", version.ref = "leakCanary" }
+lokalise = { group = "com.lokalise.android", name = "sdk", version = "2.3.3-lite" } # Regression testing required
+lottieCompose = { group = "com.airbnb.android", name = "lottie-compose", version = "6.7.1" }
+inputMask = { group = "com.github.yamin8000", name = "InputMask", version = "1.0.2" }
+material = { group = "com.google.android.material", name = "material", version = "1.13.0" }
+payPo = { group = "pl.paypo.android_sdk", name = "android_sdk", version = "1.0.3" }
+photoView = { group = "com.github.chrisbanes", name = "PhotoView", version = "2.3.0" }
+plumber = { group = "com.squareup.leakcanary", name = "plumber-android", version.ref = "leakCanary" }
+robolectric = { group = "org.robolectric", name = "robolectric", version = "4.16.1" }
+synerise = { group = "com.synerise.sdk", name = "synerise-mobile-sdk", version = "6.13.0" }
+timber = { group = "com.jakewharton.timber", name = "timber", version = "5.0.1" }
+kermit = { group = "co.touchlab", name = "kermit", version.ref = "kermit" }
+kermit-koin = { group = "co.touchlab", name = "kermit-koin", version.ref = "kermit" }
+turbine = { group = "app.cash.turbine", name = "turbine", version = "1.2.1" }
+unearthed = { group = "de.hannesstruss.unearthed", name = "unearthed", version = "0.3.0" }
+balloon = { group = "com.github.skydoves", name = "balloon", version = "1.7.6" }
+cccDetektPlugins = { group = "com.github.vudzkostek", name = "CccRuleSet", version = "1.0.0" }
+zoomable = { module = "net.engawapg.lib:zoomable", version = "2.11.1" }
+
+koin-bom = { module = "io.insert-koin:koin-bom", version = "4.2.1" }
+koin-core = { module = "io.insert-koin:koin-core" }
+koin-android = { module = "io.insert-koin:koin-android" }
+koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose" }
+koin-compose = { module = "io.insert-koin:koin-compose" }
+koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel" }
+koin-ktor = { module = "io.insert-koin:koin-ktor" }
+koin-test = { module = "io.insert-koin:koin-test" }
+
+[bundles]
+ktor = ["ktor-core", "ktor-serialization", "ktor-contentNegotiation", "ktor-client-auth", "ktor-logging"]
+test = ["assertJ", "junit5-jupiter", "junit5-vintage", "mockk", "junit5-runtime"]
+test-multiplatform = ["kotlin-test", "assertJ", "mockk"]
+test-async = ["turbine", "kotlin-coroutines-test"]
+test-compose = ["robolectric", "androidX-compose-uiTestJunit", "androidX-compose-testManifest"]
+test-kotlin = ["kotlin-test", "kotest-assertions", "kotest-extensions-arrow", "turbine", "kotlin-coroutines-test"]
+
+[plugins]
+cccAndroid = { id = "eu.ccc.mobile.android" }
+cccAndroidKoin = { id = "eu.ccc.mobile.android.koin" }
+cccKotlin = { id = "eu.ccc.mobile.kotlin" }
+cccSample = { id = "eu.ccc.mobile.sample" }
+cccCompose = { id = "eu.ccc.mobile.compose" }
+cccComposeUnitTest = { id = "eu.ccc.mobile.compose.unittest" }
+cccDepsAndroidData = { id = "eu.ccc.mobile.deps.android.data" }
+cccDepsAndroidPresentation = { id = "eu.ccc.mobile.deps.android.presentation" }
+cccDepsKotlin = { id = "eu.ccc.mobile.deps.kotlin" }
+cccMultiplatform = { id = "eu.ccc.mobile.multiplatform" }
+cccMultiplatformKoin = { id = "eu.ccc.mobile.multiplatform.koin" }
+cccMultiplatformBasic = { id = "eu.ccc.mobile.multiplatform.basic" }
+cccMultiplatformKtor = { id = "eu.ccc.mobile.multiplatform.ktor" }
+cccDetekt = { id = "eu.ccc.mobile.detekt" }
+cccFladle = { id = "eu.ccc.mobile.fladle" }
+cccPaparazzi = { id = "eu.ccc.mobile.paparazzi" }
+cccMoshix = { id = "eu.ccc.mobile.moshix" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+moshix = { id = "dev.zacsweers.moshix", version.ref = "moshix" }
+application = { id = "com.android.application", version.ref = "androidPlugin" }
+test = { id = "com.android.test", version.ref = "androidPlugin" }
+baselineprofile = { id = "androidx.baselineprofile", version = "1.5.0-alpha06" }
+library = { id = "com.android.library", version.ref = "androidPlugin" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+kotlin = { id = "kotlin", version.ref = "kotlin" }
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+parcelize = { id = "kotlin-parcelize" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+googleServices = { id = "com.google.gms.google-services", version = "4.4.4" }
+agconnect = { id = "com.huawei.agconnect" }
+crashlytics = { id = "com.google.firebase.crashlytics", version = "3.0.7" }
+firebasePerf = { id = "com.google.firebase.firebase-perf", version = "2.0.2" }
+easylauncher = { id = "com.starter.easylauncher", version = "6.4.1" }
+laboratory = { id = "io.mehow.laboratory", version.ref = "laboratory" }
+ksp = { id = "com.google.devtools.ksp", version = "2.3.7" }
+dependencyAnalysis = { id = "com.autonomousapps.dependency-analysis", version = "3.11.0" }
+multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+multiplatform-android = { id = "com.android.kotlin.multiplatform.library", version.ref = "androidPlugin" }
+fladle = { id = "com.osacky.fladle", version.ref = "fladle" }
+paparazzi = { id = "app.cash.paparazzi", version.ref = "paparazzi" }
+huaweiAppGalleryPublisher = { id = "ru.cian.huawei-publish-gradle-plugin", version = "1.5.0" }

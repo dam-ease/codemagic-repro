@@ -1,0 +1,47 @@
+{
+	"agcgw_all":{
+		"CN":"REMOVED",
+		"CN_back":"REMOVED",
+		"DE":"REMOVED",
+		"DE_back":"REMOVED",
+		"RU":"REMOVED",
+		"RU_back":"REMOVED",
+		"SG":"REMOVED",
+		"SG_back":"REMOVED"
+	},
+	"client":{
+		"cp_id":"REMOVED",
+		"product_id":"REMOVED",
+		"client_id":"REMOVED",
+		"client_secret":"REMOVED",
+		"project_id":"REMOVED",
+		"app_id":"REMOVED",
+		"api_key":"REMOVED",
+		"package_name":"eu.ccc.mobile.debug"
+	},
+	"oauth_client":{
+		"client_id":"REMOVED",
+		"client_type":1
+	},
+	"app_info":{
+		"app_id":"REMOVED",
+		"package_name":"eu.ccc.mobile.debug"
+	},
+	"configuration_version":"3.0",
+	"appInfos":[
+		{
+			"package_name":"eu.ccc.mobile.debug",
+			"client":{
+				"app_id": "REMOVED"
+			},
+			"app_info": {
+				"package_name": "eu.ccc.mobile.debug",
+				"app_id": "REMOVED"
+			},
+			"oauth_client": {
+				"client_type": 1,
+				"client_id": "REMOVED"
+			}
+		}
+	]
+}

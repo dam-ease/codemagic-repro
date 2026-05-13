@@ -1,0 +1,227 @@
+{
+  "project_info": {
+    "project_number": "REMOVED",
+    "firebase_url": "REMOVED",
+    "project_id": "REMOVED",
+    "storage_bucket": "REMOVED"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "REMOVED",
+        "android_client_info": {
+          "package_name": "eu.ccc.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "REMOVED",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "REMOVED"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "REMOVED",
+              "client_type": 3
+            },
+            {
+              "client_id": "REMOVED",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "REMOVED"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "REMOVED",
+        "android_client_info": {
+          "package_name": "eu.ccc.mobile.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "REMOVED",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "REMOVED"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "REMOVED",
+              "client_type": 3
+            },
+            {
+              "client_id": "REMOVED",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "REMOVED"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "REMOVED",
+        "android_client_info": {
+          "package_name": "eu.ccc.mobile.fake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "REMOVED",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "REMOVED"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "REMOVED",
+              "client_type": 3
+            },
+            {
+              "client_id": "REMOVED",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "REMOVED"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "REMOVED",
+        "android_client_info": {
+          "package_name": "eu.ccc.mobile.qa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "REMOVED",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "REMOVED"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "REMOVED",
+              "client_type": 3
+            },
+            {
+              "client_id": "REMOVED",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "REMOVED"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "REMOVED",
+        "android_client_info": {
+          "package_name": "eu.ccc.mobile.qa.rc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "REMOVED",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "REMOVED"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "REMOVED",
+              "client_type": 3
+            },
+            {
+              "client_id": "REMOVED",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "REMOVED"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "REMOVED",
+        "android_client_info": {
+          "package_name": "eu.ccc.mobile.qa.pre"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "REMOVED",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "REMOVED"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "REMOVED",
+              "client_type": 3
+            },
+            {
+              "client_id": "REMOVED",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "REMOVED"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
