@@ -37,6 +37,10 @@ workflows:
   baseline_profile_record_nightly:
     name: "Record baseline profile"
     instance_type: linux_x2
+    environment:
+      java: 21
+      groups:
+        - Setup
     triggering:
       cancel_previous_builds: true
     scripts:
