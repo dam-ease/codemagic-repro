@@ -45,31 +45,12 @@ definitions:
 
 
 workflows:
-  baseline_profile_check:
-    name: "Baseline profile benchmarks"
-    <<: *machine_config
-    # Override: mac_mini_m4 fails to initialise HVF for the arm64 Android emulator
-    # ("HVF error: HV_UNSUPPORTED"). m2 is known to expose HVF on Codemagic.
-    instance_type: linux_x2
-    triggering:
-      events:
-        - pull_request
-      cancel_previous_builds: true
-    scripts:
-      - *baseline_profile_check
-      - *success
-    artifacts:
-      - baselineprofile/build/outputs/connected_android_test_additional_output/**/*
-      - baselineprofile/build/outputs/androidTest-results/**/*
-    publishing:
-      scripts:
-        - *slack_baseline_profile_check
   baseline_profile_record_nightly:
     name: "Record baseline profile"
     <<: *machine_config
     # Override: mac_mini_m4 fails to initialise HVF for the arm64 Android emulator
     # ("HVF error: HV_UNSUPPORTED"). m2 is known to expose HVF on Codemagic.
-    instance_type: linux_x4
+    instance_type: linux_x2
     triggering:
       cancel_previous_builds: true
     scripts:
